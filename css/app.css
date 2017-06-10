@@ -1,0 +1,51 @@
+
+
+@media screen and (max-width:600px) {
+  .column{
+    background-color: rgba(191, 191, 191, 0.5);
+  }
+}
+
+body{
+  background-color: rgba(191, 191, 191, 0.5);
+}
+
+h1{
+  font-family: 'Rock Salt', cursive;
+  font-size: 45px;
+  background-color: rgba(191, 191, 191, 0.5);
+}
+
+h3, h6, p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20 px;
+  color: black;
+  background-color: rgba(191, 191, 191, 0.5);
+  
+
+}
+
+
+nav li{
+  display: inline;
+  padding: 4px;
+  font-size: 18px;
+
+}
+
+nav a:link, nav a:visited {
+    color: black;
+	  border-radius: 5px; /*round the corners on the nav items*/
+	  text-decoration: none; /*remove default underlines from links*/
+	  padding: 4px;
+  }
+
+  nav a:hover {
+  	background-color: white;
+    color: black;
+  	text-decoration: none;
+  }
+
+  ul {
+    background-color: rgba(191, 191, 191, 0.5);
+  }

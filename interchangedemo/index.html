@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interchange experiment</title>
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/app.css">
+  </head>
+  <body>
+<h1>Resopnsive Image</h1>
+  <img data-interchange="
+    [img/small.jpg, small],
+    [img/medium.jpg, medium],
+    [img/large.jpg, large]">
+
+<h1>Interchange Text</h1>
+  <div data-interchange="
+    [small.html, small],
+    [medium.html, medium],
+    [large.html, large]">
+  </div>
+
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/vendor/what-input.js"></script>
+  <script src="../js/vendor/foundation.js"></script>
+  <script src="../js/interchangeapp.js"></script>
+</body>
+</html>

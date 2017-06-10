@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Zoetrope</title>
+      <style media="screen">
+      #zoetrope{
+        border:3px solid red;
+        height:229px; width:229px ;
+        background: url("muybridge.png");
+        animation:muybridge 2s steps(12) infinite;
+      }
+      @keyframes muybridge {
+        100%{background-position:7320px;}
+      }
+      #zoetrope:hover{ animation-play-state: paused;}
+      </style>
+    </head>
+  <body>
+
+    <div id="zoetrope">
+    </div>
+
+  </body>
+</html>

@@ -1,2 +1,3 @@
-# art3870spring17
-Protfolio Website
+# art3870
+
+##this is my website

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="matts demo of scrolling events" />
+<meta charset="utf-8" />
+<title>DL Project Demo</title>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<link rel="stylesheet" href="dldemo.css">
+
+</head>
+
+
+<body>
+  <!--
+//////////////////////
+STICKY DIV (BECOMES FIXED AT DEFINED SCROLL VALUE)
+//////////////////////
+ -->
+
+<h1 id="sticky">Sticky Div</h1>
+
+<!--
+//////////////////////
+COUNTERS - Teal (bottom) and White (top left)
+//////////////////////
+ -->
+
+<div id="hrz_counter">horizontal scroll</div>
+<div id="vert_counter">Counter</div>
+
+
+  <!--
+//////////////////////
+Vertical Parallax Divs
+//////////////////////
+ -->
+<article id="parallax_wrap">
+  <div class="vert_parallax">PRLX</div>
+  <div class="vert_parallax">PRLX SLOW</div>
+  <div class="vert_parallax">PRLX FAST</div>
+</article>
+
+<!--
+//////////////////////
+Placeholders
+//////////////////////
+ -->
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+
+
+<!--
+//////////////////////
+JS for Sticky Div
+//////////////////////
+ -->
+
+<script type="text/javascript">
+
+$(window).scroll(function() {
+
+if ($(this).scrollTop() > 600) {
+
+  $("#sticky").css({
+    "position": "fixed",
+    "top": "0",
+    "opacity": "1",
+    "color":"white"
+
+  });
+
+}
+
+  else {
+$("#sticky").css({
+  "position": "absolute",
+  "top": "600px" ,
+  "opacity": ".3",
+  "background-color":"black",
+  "padding":"5px",
+  "color":"grey"
+});
+	}
+});
+
+</script>
+
+
+<!--
+//////////////////////
+Horizontal Counter
+//////////////////////
+ -->
+<script type="text/javascript">
+	$(window).scroll(function() {
+    $("div#hrz_counter").css({
+        "left": $(window).scrollTop() + "px"
+    }).text("px:"+$(window).scrollTop());
+});
+</script>
+<!--
+//////////////////////
+Vertical Scroll Counter
+//////////////////////
+ -->
+
+
+ <script type="text/javascript">
+  $(window).scroll(function() {
+    $("div#vert_counter").text("px:" +$(window).scrollTop());
+});
+</script>
+
+<!--
+//////////////////////
+Parallax divs (targeted with nth-child)
+
+http://css-tricks.com/how-nth-child-works/
+
+//////////////////////
+ -->
+
+<script type="text/javascript">
+  $(window).scroll(function() {
+    $("div.vert_parallax").css({
+        "top": ($(window).scrollTop()*1) + "px"
+    }).text("Regular:"+ $(window).scrollTop());
+});
+</script>
+
+<script type="text/javascript">
+  $(window).scroll(function() {
+    $("#parallax_wrap div:nth-child(3)").css({
+        "top": ($(window).scrollTop()*2) + "px"
+    }).text("Fast:"+ $(window).scrollTop());
+});
+</script>
+
+<script type="text/javascript">
+  $(window).scroll(function() {
+    $("#parallax_wrap div:nth-child(2)").css({
+        "top": ($(window).scrollTop()*0.5) + "px"
+    }).text("Slow:"+ $(window).scrollTop());
+});
+</script>
+
+
+</body>
+</html>

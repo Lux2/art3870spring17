@@ -1,0 +1,217 @@
+body{
+  height:10000px;
+  background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(0,0,0,1) 100%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+  h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-weight:normal;
+  font-size: 55px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 50px;
+  }
+  h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  }
+  h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  }
+
+  p{
+    color:black;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .center { margin: 0 auto; }
+  .content{ margin: 0 auto; width: 960px; }
+  .clear { clear: both; }
+
+  #header {
+width: 100%;
+background: url('../img/header-bg.png');
+height: 80px;
+position: fixed;
+margin-top: 30px;
+}
+
+#nav { width: 410px; float: right; margin-top: 20px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff;font-family: 'Playfair Display', serif;}
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+}
+
+#nav li{
+margin-top: 9px;
+float: left;
+padding-left: 10px;
+}
+
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Playfair Display', serif; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1; }
+
+.quotes {
+font-family: 'Nothing You Could Do', cursive;font-weight: normal;
+font-size: 45px;
+text-align: left;
+margin: 50px auto;
+}
+
+
+ .quotes_container { width: 800px; margin: 0 auto; }
+
+
+#slide1, #slide2{ width: 100%; }
+#slide1{
+background:url('../img/panel1.jpg') 50% 0 no-repeat fixed;
+color: #fff;
+height: 700px;
+margin: 0;
+padding: 200px 0 260px 0;
+background-size: cover;
+}
+
+
+#slide2{
+background-color: #fff;
+color: #333333;
+height: 200px;
+margin: 0 auto;
+overflow: hidden;
+padding: 150px 0;
+}
+
+#slide3{
+background: url(../img/panel2.jpg) 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+#slide4{
+background-color: #fff;
+color: #333333;
+height: 300px;
+padding: 200px 0;
+}
+#slide5{
+background: url(../img/panel3.jpg) 50% 0 no-repeat fixed;
+height: 200px;
+margin: 0 auto;
+padding: 250px 0;
+color: #fff;
+background-size: cover;
+}
+
+#slide6{
+background-color: #fff;
+color: #333333;
+height: 300px;
+padding: 100px 0;
+}
+
+#slide7{
+background: url(../img/panel4.jpg) 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+
+#gradient1{
+
+}
+span{
+  transform: rotate(7deg);
+}
+
+#gradient2{
+  background-color: #fff ;
+  color: #333333;
+  height: 50px;
+  padding: 100px 0;
+}
+
+#gradient3{
+background: url(../img/panel5.jpg) 50% 0 no-repeat fixed;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+
+#gradient4{
+background-color: #fff;
+color: #333333;
+height: 50px;
+padding: 100px 0;
+}
+
+#gradient5{
+  background: url(../img/panel6.jpg) 50% 0 no-repeat fixed;
+  height: 600px;
+  padding: 170px 0 0 0;
+  background-size: cover;
+  color: white;
+  }
+
+  #gradient6{
+  background-color: #fff;
+  color: #333333;
+  height: 50px;
+  padding: 100px 0;
+  }
+
+  #gradient7{
+    background: url(../img/panel7.jpg) 50% 0 no-repeat fixed;
+    height: 600px;
+    padding: 170px 0 0 0;
+    background-size: cover;
+    color: white;
+    }
+
+    #gradient8{
+    background-color: #fff;
+    color: #333333;
+    height: 50px;
+    padding: 100px 0;
+    }
+
+    #gradient9{
+      background: url(../img/panel8.jpg) 50% 0 no-repeat fixed;
+      height: 600px;
+      padding: 170px 0 0 0;
+      background-size: cover;
+      color: white;
+      }
+
+    #gradient10{
+    background-color: #fff;
+    color: #333333;
+    height: 75px;
+    padding: 100px 0;
+    }
